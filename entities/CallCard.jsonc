@@ -1,0 +1,150 @@
+{
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "start_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "end_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "meet_link": {
+      "type": "string"
+    },
+    "attendee_name": {
+      "type": "string"
+    },
+    "attendee_email": {
+      "type": "string"
+    },
+    "attendee_title": {
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "company_domain": {
+      "type": "string"
+    },
+    "company_size": {
+      "type": "string"
+    },
+    "company_industry": {
+      "type": "string"
+    },
+    "company_revenue": {
+      "type": "string"
+    },
+    "company_serves": {
+      "type": "string"
+    },
+    "executive_team": {
+      "type": "string"
+    },
+    "hubspot_contact_id": {
+      "type": "string"
+    },
+    "hubspot_company_id": {
+      "type": "string"
+    },
+    "hubspot_url": {
+      "type": "string"
+    },
+    "linkedin_url": {
+      "type": "string"
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "lead_location": {
+      "type": "string"
+    },
+    "lead_timezone": {
+      "type": "string"
+    },
+    "rsvp_status": {
+      "type": "string",
+      "enum": [
+        "accepted",
+        "tentative",
+        "awaiting"
+      ],
+      "default": "awaiting"
+    },
+    "enterprise_signal": {
+      "type": "string",
+      "enum": [
+        "Strong",
+        "Warm",
+        "Weak",
+        "Unknown"
+      ],
+      "default": "Unknown"
+    },
+    "signal_rationale": {
+      "type": "string"
+    },
+    "why_they_booked": {
+      "type": "string"
+    },
+    "company_intel": {
+      "type": "string"
+    },
+    "email_history_summary": {
+      "type": "string"
+    },
+    "hubspot_activity_summary": {
+      "type": "string"
+    },
+    "inbound_message_raw": {
+      "type": "string"
+    },
+    "inbound_message_summary": {
+      "type": "string"
+    },
+    "opening_questions": {
+      "type": "string"
+    },
+    "call_notes": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Upcoming",
+        "Live",
+        "Completed",
+        "No-Show",
+        "Cancelled",
+        "Rescheduled"
+      ],
+      "default": "Upcoming"
+    },
+    "rescheduled_to": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "research_status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Researching",
+        "Ready",
+        "Failed"
+      ],
+      "default": "Pending"
+    }
+  },
+  "required": [
+    "event_id",
+    "title"
+  ],
+  "name": "CallCard"
+}
