@@ -1,0 +1,82 @@
+{
+  "type": "object",
+  "properties": {
+    "call_card_id": {
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "contact_name": {
+      "type": "string"
+    },
+    "contact_email": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "is_published": {
+      "type": "boolean",
+      "default": false
+    },
+    "intro_message": {
+      "type": "string"
+    },
+    "pain_points": {
+      "type": "string"
+    },
+    "pricing_tier": {
+      "type": "string",
+      "enum": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "default": "E2"
+    },
+    "pricing_notes": {
+      "type": "string"
+    },
+    "anticipated_questions": {
+      "type": "string"
+    },
+    "use_cases": {
+      "type": "string"
+    },
+    "security_governance": {
+      "type": "string"
+    },
+    "content_library": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ai_exhibits": {
+      "type": "string"
+    },
+    "gong_transcript": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "company_name"
+  ],
+  "name": "SalesRoom"
+}
